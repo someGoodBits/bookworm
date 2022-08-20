@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // components
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import Reader from "./pages/Reader";
 
 function App() {
