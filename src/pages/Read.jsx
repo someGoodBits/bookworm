@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import isFile from "../utility/isFile";
 
-const Reader = () => {
+const Read = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -21,4 +21,4 @@ const Reader = () => {
     );
 };
 
-export default Reader;
+export default Read;
