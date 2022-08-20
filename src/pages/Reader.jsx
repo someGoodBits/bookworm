@@ -1,8 +1,23 @@
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import isFile from "../utility/isFile";
+
 const Reader = () => {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    const [File, setFile] = useState(null);
+
+    useEffect(()=>{
+        if(!isFile(location.state.file)) {
+            console.log("!File");
+            navigate("/");
+        }
+        setFile(location.state.file);
+    },[location])
+
     return (
-        <div className="w-screen h-screen bg-gray-900 flex flex-col items-center justify-center">
-            <div className="text-white text-3xl font-bold">Reader</div>
-        </div>
+        <div className="w-screen h-screen bg-neutral-900"></div>
     );
 };
 
