@@ -38,7 +38,7 @@ const Dashboard = () => {
                 <div className="absolute h-12 w-12 left-0 top-0 flex items-center justify-center border-r-2 border-r-primary-900">
                     <Book size={32} color="#fff" />
                 </div>
-                <span className="pl-4">Open Book </span>
+                <span className="px-4">OPEN BOOK</span>
             </Button>
         </div> 
     );

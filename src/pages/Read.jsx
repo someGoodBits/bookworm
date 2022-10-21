@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { BW_SFT_EPUB } from "../data/supportedFileTypes";
+import {Reader} from "../features/reader";
 import isFile from "../utility/isFile";
 
 const Read = () => {
@@ -17,7 +19,9 @@ const Read = () => {
     },[location])
 
     return (
-        <div className="w-screen h-screen bg-neutral-900"></div>
+        <div className="w-screen h-screen bg-neutral-900">
+            {File && <Reader file={File} fileType={BW_SFT_EPUB} />}
+        </div>
     );
 };
 
